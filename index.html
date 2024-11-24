@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="shortcut icon" href="images/faviconV2.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container my-5 text-center position-relative">
+        <h1 class="d-inline-block m-3">Bookmarker</h1>
+
+        <div class="form my-5 py-4">
+            <h2>
+                <i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+            <label for="siteName" class="m-2 p-2 fw-bold"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+            <input type="text" name="siteName" id="siteName" placeholder="Bookmark Name" class="form-control mx-3 mb-4" />
+            <label for="siteUrl" class="m-2 fw-bold"><i class="fa-solid fa-link"></i> Site URL</label>
+            <input type="text" name="siteUrl" id="siteUrl" placeholder="Website URL" class="form-control mx-3 mb-4" />
+            <button class="rounded-3 submit-btn border-0 py-2 px-5">Submit</button>
+        </div>
+
+        <table class="table table-hover align-middle text-capitalize">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
